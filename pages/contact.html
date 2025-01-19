@@ -105,37 +105,6 @@
             </div>
         </div>
     </div>
-    <script>
-        //Get all plus
-        let questions = document.querySelectorAll(".flex-p p:not(.p)");
-        //Get all answers
-        let answers = document.getElementsByClassName("answer");
-
-        //Loop on all plus
-        for (let i = 0; i < questions.length; i++) {
-            //add click event to all plus
-            questions[i].addEventListener("click",function(){
-
-                // if(answers[i].style.display == "block"){
-                //     questions[i].textContent = "+"
-                //     answers[i].style.display = "none";
-                // }else{
-                //     questions[i].textContent = "-";
-                //     answers[i].style.display = "block";
-                // }
-                
-                if(answers[i].style.maxHeight == "400px"){
-                    questions[i].textContent = "+"
-                    answers[i].style.maxHeight = "0";
-                }else{
-                    questions[i].textContent = "-";
-                    answers[i].style.maxHeight = "400px";
-                }
-            })
-            
-        }
-    </script>
-
 <footer class="common-footer">
     <div class="container">
         <div class="footer-content">
@@ -181,6 +150,6 @@
     </div>
 </footer>
 
-<script src="../main.js"></script>
+
 </body>
 </html>
